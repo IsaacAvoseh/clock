@@ -1,5 +1,5 @@
  html {
-     background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+     background: #018DED url(https://images.unsplash.com/photo-1468779823294-9824b5b9a1b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2555&q=80);
      background-size: cover;
      font-family: 'helvetica neue';
      text-align: center;
@@ -34,10 +34,102 @@
      /* account for the height of the clock hands */
  }
  
- .hand {
+ .circle {
+     width: 2rem;
+     height: 2rem;
+     background-color: white;
+     border-radius: 50%;
+     margin: 0 auto;
+     position: relative;
+     z-index: 1;
+     top: 48%;
+ }
+ 
+ .twelve {
+     width: 1.5rem;
+     height: 0.5rem;
+     background-color: orange;
+     margin: 0 auto;
+     position: relative;
+     z-index: 1;
+     top: 35%;
+     right: 50%;
+ }
+ 
+ .three {
+     width: 1.5rem;
+     height: 0.5rem;
+     background-color: yellow;
+     margin: 0 auto;
+     position: relative;
+     z-index: 1;
+     top: 42%;
+     left: 50%;
+ }
+ 
+ .six {
+     width: 1.5rem;
+     height: 0.5rem;
+     background-color: green;
+     margin: 0 auto;
+     position: relative;
+     z-index: 1;
+     top: 45.5%;
+     left: 50%;
+ }
+ 
+ .nine {
+     width: 1.5rem;
+     height: 0.5rem;
+     background-color: red;
+     margin: 0 auto;
+     position: relative;
+     z-index: 1;
+     top: 35%;
+     right: 50%;
+ }
+ 
+ .sechand {
+     width: 50%;
+     height: 4px;
+     background: black;
+     position: absolute;
+     top: 50%;
+     transform-origin: 100%;
+     /*moves the starting point of the clock hands to the middle of the clock */
+     transform: rotate(90deg);
+     /*moves the position of the clock hands to 12 hours, pointing up */
+     transition: all 0.05s;
+     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+     /*gives it the snappy tick of a clock*/
+ }
+ 
+ .minhand {
      width: 50%;
      height: 6px;
      background: black;
      position: absolute;
      top: 50%;
+     transform-origin: 100%;
+     /*moves the starting point of the clock hands to the middle of the clock */
+     transform: rotate(90deg);
+     /*moves the position of the clock hands to 12 hours, pointing up */
+     transition: all 0.05s;
+     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+     /*gives it the snappy tick of a clock*/
+ }
+ 
+ .hourhand {
+     width: 50%;
+     height: 8px;
+     background: black;
+     position: absolute;
+     top: 50%;
+     transform-origin: 100%;
+     /*moves the starting point of the clock hands to the middle of the clock */
+     transform: rotate(90deg);
+     /*moves the position of the clock hands to 12 hours, pointing up */
+     transition: all 0.05s;
+     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+     /*gives it the snappy tick of a clock*/
  }
