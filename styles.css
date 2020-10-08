@@ -48,45 +48,47 @@
  .twelve {
      width: 1.5rem;
      height: 0.5rem;
-     background-color: orange;
+     background-color: white;
      margin: 0 auto;
      position: relative;
      z-index: 1;
-     top: 35%;
-     right: 50%;
+     top: -10%;
+     right: 0%;
+     transform: rotate(90deg);
  }
  
  .three {
      width: 1.5rem;
      height: 0.5rem;
-     background-color: yellow;
+     background-color: white;
      margin: 0 auto;
      position: relative;
      z-index: 1;
-     top: 42%;
+     top: 43.8%;
      left: 50%;
  }
  
  .six {
      width: 1.5rem;
      height: 0.5rem;
-     background-color: green;
+     background-color: white;
      margin: 0 auto;
      position: relative;
      z-index: 1;
-     top: 45.5%;
-     left: 50%;
+     top: 92%;
+     left: 0%;
+     transform: rotate(90deg);
  }
  
  .nine {
      width: 1.5rem;
      height: 0.5rem;
-     background-color: red;
+     background-color: white;
      margin: 0 auto;
-     position: relative;
+     position: absolute;
      z-index: 1;
-     top: 35%;
-     right: 50%;
+     top: 50%;
+     left: -2%;
  }
  
  .sechand {
